@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../Nati.jpg";
-import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { color } from "framer-motion";
