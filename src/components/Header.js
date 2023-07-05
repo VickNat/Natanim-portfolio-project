@@ -1,17 +1,24 @@
 import React from 'react';
-import ReactTyped from 'react-typed';
+import { TypeAnimation } from "react-type-animation";
+
 
 const Header = () => {
   return (
     <div className='header-wrapper'>
       <div className='main-info'>
         <h1>Web developement and websites promotion</h1>
-        <ReactTyped 
+        <TypeAnimation 
           className='typed-text'
-          strings={['Web developement', 'Vick\'s']}
-          typeSpeed={60}
-          backSpeed={70}
-          loop
+          sequence={[
+            'Natanim Ashenafi',
+            1000,
+            'Vick\'s',
+            1000,
+            'Web Development',
+            1000
+          ]}
+          speed={50}
+          repeat={Infinity}
         />
 
         <a href='#' className='btn-main-offer'>Contact me</a>
@@ -20,4 +27,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
