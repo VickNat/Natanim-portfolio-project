@@ -1,10 +1,14 @@
 import React from 'react';
 import { TypeAnimation } from "react-type-animation";
+import Particle from './Particle';
 
 
 const Header = () => {
   return (
-    <div className='header-wrapper'>
+    <section className='header-wrapper'>
+      {/* <div className='particles-wrapper'>
+        <Particle />
+      </div> */}
       <div className='main-info'>
         <h1>Web developement and websites promotion</h1>
         <TypeAnimation 
@@ -21,9 +25,9 @@ const Header = () => {
           repeat={Infinity}
         />
 
-        <a href='#' className='btn-main-offer'>Contact me</a>
+        <a href='#' className='btn-main-offer'>My Services</a>
       </div>
-    </div>
+    </section>
   )
 }
 

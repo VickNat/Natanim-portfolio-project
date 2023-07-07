@@ -24,31 +24,8 @@ const Particle = () => {
         options={{
           background: {
             image: "url('pietro-jeng-n6B49lTx7NM-unsplash.jpg')",
-            position: "50% 50%",
             repeat: "no-repeat",
             size: "cover"
-          },
-          
-          interactivity: {
-              events: {
-                  onClick: {
-                      enable: true
-                  },
-                  onHover: {
-                      enable: true,
-                      mode: "repulse"
-                  },
-                  resize: true,
-              },
-              modes: {
-                  push: {
-                      quantity: 4,
-                  },
-                  repulse: {
-                      distance: 200,
-                      duration: 0.4,
-                  },
-              },
           },
           particles: {
               color: {
@@ -58,31 +35,18 @@ const Particle = () => {
                   color: "#A9C016",
                   distance: 150,
                   enable: true,
-                  opacity: 0.3,
-                  width: 1,
-              },
-              collisions: {
-                  enable: true,
+                  opacity: 0.3
               },
               move: {
-                  direction: "none",
                   enable: true,
-                  outModes: {
-                      default: "bounce",
-                  },
-                  random: false,
                   speed: 3,
-                  straight: false,
               },
               number: {
                   density: {
                       enable: true,
-                      area: 800,
+                      area: 900,
                   },
                   value: 80,
-              },
-              opacity: {
-                  value: 0.5,
               }
           }
       }}
