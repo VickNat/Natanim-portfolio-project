@@ -5,7 +5,7 @@ import Particle from './Particle';
 
 const Header = () => {
   return (
-    <section className='header-wrapper'>
+    <section id="header" className='header-wrapper'>
       {/* <div className='particles-wrapper'>
         <Particle />
       </div> */}

@@ -11,11 +11,11 @@ const AboutMe = () => {
   }
 
   return (
-    <section className="aboutus-section py-5 py-xl-8">
+    <section id="about-me" className="aboutus-section py-5 py-xl-8">
       <div className="container mb-4 mb-md-5 mb-xl-8">
         <div className="row justify-content-md-center">
           <div className="col-md-6 col-xxl-8">
-            <img className="aboutus-image img-fluid rounded" loading="lazy" src={logo} alt="" />
+            <img className="contactus-image img-fluid rounded" loading="lazy" src={logo} alt="" />
           </div>
           <div className="col-md-6 col-xxl-8 d-flex align-items-center">
             <h2 className='mx-auto'>What you'd want to know about me...</h2>

@@ -1,19 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Particle from './components/Particle';
-import AboutMe from './components/AboutMe';
-import Services from './components/Services';
+import ContactMe from './components/ContactMe';
+import Home from './components/Home';
+import AppWrapper from './components/AppWrapper';
 
 function App() {
-  
   return (
     <>
-      <Navbar />
-      <Header id="header" />
-      <AboutMe id="about-me" />
-      <Services />
+    <Navbar />
+      <AppWrapper>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ContactMe" element={<ContactMe />} />
+        </Routes>
+      </AppWrapper>
     </>
   );
 }

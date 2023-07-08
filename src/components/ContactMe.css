@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --text-purple: #d9b1f0;
+  --primary-green: #A9C016;
+  --primary-purple: #140424;
+  --secondary-purple: #573970;
+  --border-purple: #745387;
+  --border-hover-purple: #451c5e;
+  --background-color: rgb(242, 240, 243);
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
+  background-color: var(--primary-purple);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.contactme-section .title{
+  margin-top: 7rem !important;
+}
+
+.contactme-section h2{
+  color: var(--text-purple) !important;
+}
+
+.contactme-section p{
+  color: var(--primary-green);
+}
+
+.contactme-section input, .contactme-section textarea{
+  border-radius: 1rem !important;
+  background: var(--text-purple) !important;
+}
+
+.contactme-section input:focus, .contactme-section textarea:focus {
+  border-color: var(--primary-green) !important;
+  box-shadow: 5px 5px 10px var(--secondary-purple) !important;
+}
+
+.contactme-section{
+  margin-top: 6rem;
+  color: var(--text-purple) !important;
+}
+
+.contactme-section button{
+  border: 1px solid var(--border-purple) !important;
+  text-transform: uppercase;
+  color: var(--text-purple) !important;
+  margin: 2rem 0;
+  border-radius: 1rem !important;
+  transition: .2s ease-in-out;
+  background: transparent !important;
+}
+
+.contactme-section button:hover{
+  border: 1px solid var(--primary-green) !important;
+  background-color: var(--primary-green) !important;
+  color: var(--primary-purple) !important;
+  transform: scale(1, 1.1);
+}
+
+.contactme-section img{
+  box-shadow: none !important;
+}

@@ -3,9 +3,15 @@ import logo from "../Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { color } from "framer-motion";
+import { Link, Outlet } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
+
+  
+
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo" /></a>
@@ -16,31 +22,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#header">Home</a>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about-me">About me</a>
+              <HashLink smooth className="nav-link" to="#about-me">About me</HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <HashLink smooth className="nav-link" to="#services">Services</HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Experiences</a>
+              <Link className="nav-link" to="/">Experiences</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Portfolio</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contact me</a>
+              <Link className="nav-link" to="/ContactMe">Contact me</Link>
             </li>
 
-            {/* <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
-            </li> */}
           </ul>
         </div>
       </div>
     </nav>
+
+    <Outlet />
+    </>
   )
 }
 
