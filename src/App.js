@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import ContactMe from './components/ContactMe';
 import Home from './components/Home';
 import AppWrapper from './components/AppWrapper';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ContactMe" element={<ContactMe />} />
+          <Route path="/Experience" element={<Experience />} />
         </Routes>
       </AppWrapper>
+    <Footer />
     </>
   );
 }

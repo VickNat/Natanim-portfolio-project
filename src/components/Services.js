@@ -1,6 +1,7 @@
 import React from 'react'
 import { UserCard } from 'react-ui-cards'
 import image from '../Nati.jpg'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -18,9 +19,9 @@ const Services = () => {
               <img className="card-img-top" src={image} alt="Card image cap" />
               <div className="card-body">
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Front-End developement
                 </p>
-                <button className="button btn btn-lg" type="button">Contact me</button>
+                <Link to="/ContactMe" className="button btn btn-lg" type="button">Contact me</Link>
               </div>
             </div>
           </div>
@@ -29,9 +30,9 @@ const Services = () => {
               <img className="card-img-top" src={image} alt="Card image cap" />
               <div className="card-body">
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Backend developement
                 </p>
-                <button className="button btn btn-lg" type="button">Contact me</button>
+                <Link to="/ContactMe" className="button btn btn-lg" type="button">Contact me</Link>
               </div>
             </div>
           </div>
@@ -40,9 +41,9 @@ const Services = () => {
               <img className="card-img-top" src={image} alt="Card image cap" />
               <div className="card-body">
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Website design
                 </p>
-                <button className="button btn btn-lg" type="button">Contact me</button>
+                <Link to="/ContactMe" className="button btn btn-lg" type="button">Contact me</Link>
               </div>
             </div>
           </div>
@@ -51,9 +52,9 @@ const Services = () => {
               <img className="card-img-top" src={image} alt="Card image cap" />
               <div className="card-body">
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Digital Marketting
                 </p>
-                <button className="button btn btn-lg" type="button">Contact me</button>
+                <Link to="/ContactMe" className="button btn btn-lg" type="button">Contact me</Link>
               </div>
             </div>
           </div>

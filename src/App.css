@@ -20,9 +20,6 @@ body {
 }
 
 /* NAVBAR */
-/* nav {
-  width: 100%;
-} */
 .navbar {
   position: fixed !important;
   width: 100%;
@@ -62,11 +59,11 @@ nav ul li {
   transition: .2s ease-in-out;
 }
 
-/* .navbar-brand {
+.navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 4rem !important;
-} */
+}
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem solid var(--primary-green) !important;
@@ -154,7 +151,7 @@ nav ul li {
   background: var(--primary-white) !important;
 }
 
-.aboutus-image {
+.aboutus-section img, .aboutus-section button {
   box-shadow: 4px 4px 10px var(--secondary-purple);
 }
 
@@ -222,4 +219,48 @@ nav ul li {
   .service-section .service-card{
     margin: 2rem;
   }
+}
+
+/* FOOTER */
+.footer-section{
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background: var(--primary-purple);
+}
+
+.footer-section div, .footer-section p, .footer-section span, .footer-section a{
+  color: var(--text-purple);
+}
+
+.footer-section a{
+  color: var(--text-purple) !important;
+  text-decoration: none;
+}
+
+#last-line{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+i{
+  color: var(--text-purple);
+  transition: .2s ease-in-out;
+  width: 2rem;
+  height: auto;
+}
+
+i:hover{
+  color: var(--primary-green);
+  transform: scale(1.5, 1.5);
+}
+
+.footer-section h6 > a{
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-section h6 > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-green);
+  color: var(--primary-green) !important;
 }

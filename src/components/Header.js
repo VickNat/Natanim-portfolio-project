@@ -25,7 +25,7 @@ const Header = () => {
           repeat={Infinity}
         />
 
-        <a href='#' className='btn-main-offer'>My Services</a>
+        <a href='https://github.com/VickNat' target='_blank' className='btn-main-offer'>My Projects</a>
       </div>
     </section>
   )
