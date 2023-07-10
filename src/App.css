@@ -59,12 +59,6 @@ nav ul li {
   transition: .2s ease-in-out;
 }
 
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 4rem !important;
-}
-
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem solid var(--primary-green) !important;
 }
