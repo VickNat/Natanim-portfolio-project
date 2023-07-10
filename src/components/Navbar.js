@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { color } from "framer-motion";
 import { Link, Outlet } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 

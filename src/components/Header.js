@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from "react-type-animation";
-import Particle from './Particle';
+// import Particle from './Particle';
 
 
 const Header = () => {
